@@ -5,7 +5,7 @@ const async = require('async');
   sentiment score - mean
   sentiment score - std dev
 */
-const movieDB = require('moviedb')('e93e4d950ca2bba46bef29cb449feeb3');
+const movieDB = require('moviedb')(process.env.MOVIE_DB_TOKEN);
 const twitterService = require('./twitter-service');
 
 const movieService = {
